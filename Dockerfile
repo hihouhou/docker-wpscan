@@ -9,6 +9,8 @@ FROM debian:latest
 
 LABEL org.opencontainers.image.authors="hihouhou < hihouhou@hihouhou.com >"
 
+ENV WPSCAN_VERSION=v4.2.0
+
 # Update & install packages for wpscan
 RUN apt-get update && \
     apt-get install -y gcc git ruby ruby-dev libcurl4-openssl-dev make zlib1g-dev procps
